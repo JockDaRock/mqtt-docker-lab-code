@@ -4,17 +4,3 @@ COPY mosquitto.conf /mosquitto/config/mosquitto.conf
 
 EXPOSE 1883
 EXPOSE 9001
-
-LABEL cisco.info.name="MQTT X86" \
-      cisco.info.description="a simple MQTT broker with MQTT port and Websockets port enabled" \
-      cisco.info.version="0.1" \
-      cisco.info.author-link="" \
-      cisco.info.author-name="" \
-      cisco.type=docker \
-      cisco.cpuarch=x86_64 \
-      cisco.resources.profile=custom \
-      cisco.resources.cpu=50 \
-      cisco.resources.memory=50 \
-      cisco.resources.disk=10 \
-      cisco.resources.network.0.interface-name=eth0 \
-      cisco.resources.network.0.ports.tcp=[1883,9001]
